@@ -57,6 +57,7 @@ jobs:
   deploy-to-webapp:
     needs: build-and-test
     runs-on: ubuntu-latest
+    environment: my-first-env
 
     steps:
       - uses: actions/download-artifact@v2
